@@ -1,0 +1,99 @@
+.Skills{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.Skills h1{
+    text-align: center;
+ 
+  
+
+}
+*{
+    --text-colors:white;
+}
+.Skills-cen{
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.Skills-con{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+   
+
+}
+
+.Skills-field{
+    flex: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    
+
+}
+
+
+.Skills-field li{
+    
+    list-style-type: none;
+    gap: 10px;
+
+    text-align: center;
+
+    padding: 5px;
+    margin: 5px;
+    border-width: 2px;
+    border-style:solid;
+    border-color: rgb(2, 32, 130);
+    
+    
+    border-radius: 10px;
+    width: 20ch;
+    color: rgb(3, 3, 4);
+    font-size: 1.1rem;
+
+      font-family: "poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  
+
+    
+}
+
+
+.Skills-field li img{
+    padding: 2px;
+    margin: 2px 8px;
+    background-color: white;
+    position:absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    border-radius: 10px;
+    border-color: blueviolet;
+    border-width: 2px;
+
+
+}
+
+.Skills-field .Category{
+    color: rgb(43, 18, 94);
+}
+

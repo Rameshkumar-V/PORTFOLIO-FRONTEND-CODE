@@ -1,0 +1,129 @@
+html{
+    top:0;
+    left: 0;
+    right: 0;
+
+}
+
+.Home{
+    height: 500px;
+
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
+    justify-content: top;
+    align-items: center;
+
+}
+
+.Home .p-name{
+    color:rgb(3, 10, 95);
+    font-weight: 800;
+}
+
+.Home .p-job{
+    color: rgb(84, 66, 32);
+}
+
+.Home .p-welcome{
+    color: #330b02;
+}
+
+
+.Home .Home-Container{
+    
+    height: 80%;
+    width: 90%;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    
+}
+
+.Home .Home-Container img{
+    height: 300px;
+    border-radius: 50%;
+}
+
+
+
+
+.Home .Home-Container .Home-Information{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+.Home .Home-Container .Home-Information h4{
+    margin-right: 20ch;
+}
+
+.Home .Home-Container .Home-Information h3{
+    margin-left: 15ch;
+}
+
+.Home .Home-Container p{
+    padding: 10px;
+    text-align: justify;
+    text-indent: 5ch;
+}
+
+.Home .Home-Container .img{
+    display: flex;
+    justify-content: center;
+}
+
+
+.Home button{
+    background-color: rgb(5, 132, 244);
+    border-radius: 10px;
+    padding:5px;
+    margin: 8px;
+    border: none;
+   
+}
+
+.Home a{
+    text-decoration: none;
+    color:white;
+    padding: 10px;
+    
+}
+
+/* Down Symbol Styling */
+.down-symbol {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 10px solid #FFFFFF; /* White color */
+  }
+  
+
+@media (max-width:700px) {
+
+    .Home .Home-Container{
+        flex-direction: column; height: 100%;}
+
+    .Home{ height: 800px; }
+
+    .Home .Home-Container{ width: 100%; }
+
+    .Home .Home-Container img{
+             height: 250px;
+             width: 250px; }
+}
