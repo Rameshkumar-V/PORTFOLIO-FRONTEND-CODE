@@ -4,7 +4,7 @@ function About(){
     return (
         <div className="About" id="About">
 
-            <h1>About Me</h1>
+            <h1 style={{ color: "white"}}>About Me</h1>
            <p>
 Hey there! 👋 I'm Rameshkumar, a driven and ambitious second-year student pursuing a degree in Computer Scince, specializing in web development.
 

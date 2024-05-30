@@ -50,7 +50,7 @@ function Skills() {
   return (
     <div className="Skills" id="Myskills" ref={skillsRef}>
       
-      <h1>Skills</h1>
+      <h1 style={{ color: "white"}}>Skills</h1>
       <div className="Skills-cen">
         <div className="Skills-con">
           {Object.keys(skill).map((category) => {
@@ -62,7 +62,7 @@ function Skills() {
                 <h3 className="Category">{category}</h3>
                 <ul>
                   {skill[category].map((item, i) => (
-                    <li className={`Skills ${isVisible ? "animate" : ""}`} key={i}>
+                    <li className={`Skills ${isVisible ? "animate" : ""}`} key={i} style={{ color: "white"}}>
                       {item.name}
                       {item.link && item.link !== "SERVICE" ? (
                         <img width="30" height="30" src={item.link} alt="img" />

@@ -31,7 +31,7 @@ const ProjectSlider = () => {
 
   return (
     <div className="Project" id="Project">
-      <h1>Projects</h1>
+      <h1 style={{ color: "white"}}>Projects</h1>
       <div className="Project-Slider">
         {projects.length > 0 && (
           <div className="project">
@@ -40,7 +40,7 @@ const ProjectSlider = () => {
             <p className='desc'>{projects[currentProjectIndex].desc}</p>
             <div className="btns">
               <button className='pre' onClick={prevProject}>Previous</button>
-              <button className='View'><a href={projects[currentProjectIndex].github}>Github Link</a></button>
+              <button className='github'><a href={projects[currentProjectIndex].github}>Github  or View Link</a></button>
               <button className='next' onClick={nextProject}>Next</button>
             </div>
           </div>
