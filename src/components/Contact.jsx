@@ -11,7 +11,7 @@ function Contact() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await axios.get("http://localhost:3000/getcontact");
+        const response = await axios.get("https://portfolio-backend-4-ahwz.onrender.com/getcontact");
         console.log("fetched data:", response.data);
         setContact(response.data.contact);
         console.log(response.data); // Since the response is an array, get the first element
