@@ -49,7 +49,7 @@ function Contact() {
   }, [contactRef]);
 
   return (
-    <div className="Contact">
+    <div className="Contact" id="Contact">
       <h2 style={{ color: "white"}}>Contact Me</h2>
       
     <div className="Contact-Details " ref={contactRef}>

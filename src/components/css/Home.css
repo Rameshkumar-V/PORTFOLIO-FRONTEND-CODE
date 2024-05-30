@@ -1,3 +1,6 @@
+::-webkit-scrollbar {
+    display: none;
+  }
 html{
     top:0;
     left: 0;
@@ -93,7 +96,7 @@ html{
 }
 
 .Home .Home-Container p{
-    padding: 10px;
+    padding: 20px;
     text-align: justify;
     text-indent: 5ch;
 }
