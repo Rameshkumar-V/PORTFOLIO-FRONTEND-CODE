@@ -1,46 +1,109 @@
-/* Contact.css */
-
 .Contact {
+  border-radius: 10px;
+  background-image: repeating-linear-gradient(90deg, hsla(69,0%,61%,0.05) 0px, hsla(69,0%,61%,0.05) 1px,transparent 1px, transparent 104px),repeating-linear-gradient(0deg, hsla(69,0%,61%,0.05) 0px, hsla(69,0%,61%,0.05) 1px,transparent 1px, transparent 104px),repeating-linear-gradient(0deg, hsla(69,0%,61%,0.08) 0px, hsla(69,0%,61%,0.08) 1px,transparent 1px, transparent 13px),repeating-linear-gradient(90deg, hsla(69,0%,61%,0.08) 0px, hsla(69,0%,61%,0.08) 1px,transparent 1px, transparent 13px),linear-gradient(45deg, rgb(4, 4, 4),rgb(79, 79, 79)); color:black;
   height: fit-content;
   width: 100%;
   overflow: hidden;
-    text-align: center;
-    margin: 100px 0px;
-    
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
+  text-align: center;
+  margin: 10px 0px;
+  padding: 100px 0px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: white;
+}
+
+.Contact h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  opacity: 1;
   
-  .Contact h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-  }
-  
-  .Contact-Details {
-    margin-top: 20px;
-  }
-  
-  .Contact-Details table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  .Contact-Details table td {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .Contact-Details table td:first-child {
-    font-weight: bold;
-  }
-  
-  .Contact-Details table td a {
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  .Contact-Details table td a:hover {
-    text-decoration: underline;
-  }
-  
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  color: white;
+}
+
+.Contact .show h1 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.Contact-Details {
+  margin-top: 20px;
+}
+
+.Contact-Details table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.Contact-Details table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.Contact-Details table tr.show td {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.Contact-Details table td:first-child {
+  font-weight: bold;
+}
+
+.Contact-Details table td a {
+  color: #007bff;
+  color:white;
+  text-decoration: none;
+}
+
+.Contact-Details table td a:hover {
+  text-decoration: underline;
+}
+
+.VisitButton {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.VisitButton.show {
+  opacity: 1;
+}
+
+.Contact .VisitButton {
+  padding: 5px 20px;
+  background-color:  #007bff; /* Primary color */
+  color: #fff;
+  border: 2px solid #c3d1e0; /* Border color */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  background-image: linear-gradient(to right, #0056b3,  #007bff); /* Gradient effect */
+}
+
+.Contact .VisitButton:hover {
+  background-color:  #007bff; /* Hover background color */
+  border-color: #007bff; /* Hover border color */
+}
+
+
+
+.hidden{
+  opacity: 0;
+  transform: translateX(-100%);
+  filter: blur(5px);
+
+  transition:  all 1s;
+
+}
+
+
+.show-c{
+
+
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}

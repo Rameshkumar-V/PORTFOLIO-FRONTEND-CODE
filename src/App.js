@@ -4,6 +4,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Header from './components/Header';
 import Home from './components/Home';
+import Footer from './components/Footer';
 import ProjectSlider from './components/Project';
 import Skills from './components/Skills';
 
@@ -17,6 +18,7 @@ function App() {
      <Skills/>
      <ProjectSlider/>
      <Contact/>
+     <Footer/>
     </div>
   );
 }

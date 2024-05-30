@@ -1,4 +1,6 @@
 .Project{
+    background-color: #eae6ff;
+    background-image: repeating-linear-gradient(90deg, rgba(60, 102, 231,0.08) 0px, rgba(60, 102, 231,0.08) 1px,transparent 1px, transparent 9px),repeating-linear-gradient(0deg, rgba(60, 102, 231,0.08) 0px, rgba(60, 102, 231,0.08) 1px,transparent 1px, transparent 9px),linear-gradient(90deg, rgb(57, 58, 88),rgb(176, 24, 213));border-radius: 10px;
     height: fit-content;
     width: 100%;
 

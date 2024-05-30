@@ -1,9 +1,14 @@
 
 
 header {
+    background-color: #1b0a6e;
+    background-image: repeating-linear-gradient(45deg, hsla(64,83%,54%,0.05) 0px, hsla(64,83%,54%,0.05) 1px,transparent 1px, transparent 11px,hsla(64,83%,54%,0.05) 11px, hsla(64,83%,54%,0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(90deg, hsla(64,83%,54%,0.05) 0px, hsla(64,83%,54%,0.05) 1px,transparent 1px, transparent 11px,hsla(64,83%,54%,0.05) 11px, hsla(64,83%,54%,0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(0deg, hsla(64,83%,54%,0.05) 0px, hsla(64,83%,54%,0.05) 1px,transparent 1px, transparent 11px,hsla(64,83%,54%,0.05) 11px, hsla(64,83%,54%,0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(135deg, hsla(64,83%,54%,0.05) 0px, hsla(64,83%,54%,0.05) 1px,transparent 1px, transparent 11px,hsla(64,83%,54%,0.05) 11px, hsla(64,83%,54%,0.05) 12px,transparent 12px, transparent 32px),linear-gradient(90deg, rgb(41, 27, 158),rgb(249, 77, 212));
+    border-radius: 10px;
+    
+   
     height:fit-content;
     width:  100%;
-    padding: 10px;
+    padding:  5px 0px;
 
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -20,6 +25,11 @@ header ul {
     display: flex;
     justify-content: right;
 }
+header img{
+    color: white;
+    background-color: transparent;
+
+}
 
 
 header ul li{
@@ -33,24 +43,46 @@ margin-right: 10px;;
     display: none;
     height: 40px;
     position: absolute;
+    
 }
 
 header ul li a{
     text-decoration: none;
     color: white;
     padding: 5px;
-    background-color: rgb(7, 57, 165);
-    border-radius: 10px;
+    
+    padding: 2px 20px;
+    margin: 20px 0;
+  
+    color: #fff;
+    border: 2px solid #0056b3; /* Border color */
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: #0056b3;
 }
 
 @media (max-width: 700px) {
+
+    header button{
+        background-color: transparent;
+        border: none;
+    }
+   
     .menu-icon{
         display: flex;
+       
+        position: fixed;
+       
+        bottom: 40px;
+        right: 20px;
+        z-index: 2;
+
     }
 
     header ul {
         display: none;
-        flex-direction: column;
+        flex-direction: row;
         height: 100vh;
         width: 100vw;
         text-align: center;
@@ -59,9 +91,37 @@ header ul li a{
         
        
     }
+    
 
     header .navbar-show{
         display: flex;
+        flex-direction: column;
+        position: fixed;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        background:#1b0a6e;
+        
+       
+        margin-right: 10px;
+        border-radius: 10px;
+        overflow-x: scroll;
+        
+        
+
+      
+        z-index: 1;
+
+
+
+        
+    }
+    header img{
+        background-color: rgb(235, 227, 242);
+        color:white;
+        border-radius: 10px;
+    
+     
     }
 
    
@@ -69,3 +129,4 @@ header ul li a{
     
     
 }
+

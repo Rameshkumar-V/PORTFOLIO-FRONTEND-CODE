@@ -1,4 +1,10 @@
 .Skills{
+    background-color: #7de9e9;
+    background-image: repeating-linear-gradient(90deg, hsla(292,0%,98%,0.05) 0px, hsla(292,0%,98%,0.05) 1px,transparent 1px, transparent 104px),repeating-linear-gradient(0deg, hsla(292,0%,98%,0.05) 0px, hsla(292,0%,98%,0.05) 1px,transparent 1px, transparent 104px),repeating-linear-gradient(0deg, hsla(292,0%,98%,0.07) 0px, hsla(292,0%,98%,0.07) 1px,transparent 1px, transparent 13px),repeating-linear-gradient(90deg, hsla(292,0%,98%,0.07) 0px, hsla(292,0%,98%,0.07) 1px,transparent 1px, transparent 13px),linear-gradient(90deg, rgb(64, 139, 254),rgb(104, 21, 247));
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 10px 0px;
+  
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -56,11 +62,12 @@
     border-width: 2px;
     border-style:solid;
     border-color: rgb(2, 32, 130);
+    border-color: rgb(0, 0, 0);
     
     
     border-radius: 10px;
     width: 20ch;
-    color: rgb(3, 3, 4);
+    color: black;
     font-size: 1.1rem;
 
       font-family: "poppins", sans-serif;
@@ -74,9 +81,58 @@
   position: relative;
   
 
+
+
     
 }
+.animate{
+    animation: myAnim 3s ease 0s 1 alternate both;
+}
+@keyframes myAnim {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 1;
+		transform: translateY(-45px);
+	}
 
+	24% {
+		opacity: 1;
+	}
+
+	40% {
+		animation-timing-function: ease-in;
+		transform: translateY(-24px);
+	}
+
+	65% {
+		animation-timing-function: ease-in;
+		transform: translateY(-12px);
+	}
+
+	82% {
+		animation-timing-function: ease-in;
+		transform: translateY(-6px);
+	}
+
+	93% {
+		animation-timing-function: ease-in;
+		transform: translateY(-4px);
+	}
+
+	25%,
+	55%,
+	75%,
+	87% {
+		animation-timing-function: ease-out;
+		transform: translateY(0px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
 
 .Skills-field li img{
     padding: 2px;
@@ -94,6 +150,6 @@
 }
 
 .Skills-field .Category{
-    color: rgb(43, 18, 94);
+    color:black;
 }
 

@@ -1,4 +1,7 @@
-.About{
+.About {
+    background-image: repeating-linear-gradient(45deg, hsla(112,98%,100%,0.05) 0px, hsla(112,98%,100%,0.05) 1px,transparent 1px, transparent 11px,hsla(112,98%,100%,0.05) 11px, hsla(112,98%,100%,0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(90deg, hsla(112,98%,100%,0.05) 0px, hsla(112,98%,100%,0.05) 1px,transparent 1px, transparent 11px,hsla(112,98%,100%,0.05) 11px, hsla(112,98%,100%,0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(0deg, hsla(112,98%,100%,0.05) 0px, hsla(112,98%,100%,0.05) 1px,transparent 1px, transparent 11px,hsla(112,98%,100%,0.05) 11px, hsla(112,98%,100%,0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(90deg, hsla(112,98%,100%,0.05) 0px, hsla(112,98%,100%,0.05) 1px,transparent 1px, transparent 11px,hsla(112,98%,100%,0.05) 11px, hsla(112,98%,100%,0.05) 12px,transparent 12px, transparent 32px),linear-gradient(90deg, rgb(229, 94, 170),rgb(247, 192, 238));
+    border-radius: 10px;
+    color: #000000; /* White font color for better contrast */
     height: 700px;
     height: fit-content;
     width: 100%;
@@ -9,17 +12,19 @@
     align-items: center;
 
     font-family: "Poppins", sans-serif;
-    font-weight: 300;
+    font-weight: 500;
     font-style: normal;
+    margin-top: 20px;
 }
 
-.About h1{
+.About h1 {
     text-align: center;
 }
 
-.About p{
+.About p {
     padding: 10px;
     width: 80%;
     text-align: justify;
     text-indent: 5ch;
+    font-weight: 200;
 }

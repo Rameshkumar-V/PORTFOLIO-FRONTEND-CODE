@@ -1,0 +1,26 @@
+.element {
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s;
+    background-image: linear-gradient(to right, red , yellow); background-size: 200% auto;
+    animation: slide 1s infinite alternate;
+}
+
+@keyframes slide {
+    0% {
+        background-position: left;
+        background-size: 300%;
+    }
+    100% {
+        background-position: right;
+        background-size: 100%;
+    }
+}
+
+.element:hover {
+    transform: scale(1.1);
+    animation-play-state: paused;
+}
