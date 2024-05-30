@@ -40,11 +40,11 @@ function Skills() {
       observer.observe(skillsRef.current);
     }
 
-    return () => {
-      if (skillsRef.current) {
-        observer.unobserve(skillsRef.current);
-      }
-    };
+    // return () => {
+    //   if (skillsRef.current) {
+    //     observer.unobserve(skillsRef.current);
+    //   }
+    // };
   }, []);
 
   return (

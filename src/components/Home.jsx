@@ -41,11 +41,11 @@ function Home() {
       observer.observe(homeRef.current);
     }
 
-    return () => {
-      if (homeRef.current) {
-        observer.unobserve(homeRef.current);
-      }
-    };
+    // return () => {
+    //   if (homeRef.current) {
+    //     observer.unobserve(homeRef.current);
+    //   }
+    // };
   }, []);
 
   return (
