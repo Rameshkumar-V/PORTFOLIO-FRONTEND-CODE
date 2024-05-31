@@ -1,11 +1,13 @@
 .element {
     color: white;
-    padding: 10px 20px;
+    padding: 30px 50px;
+    font-size: 1rem;
     border: none;
     cursor: pointer;
     position: relative;
     transition: transform 0.3s;
-    background-image: linear-gradient(to right, red , yellow); background-size: 200% auto;
+    background: #FFDE00;
+    /* background-image: linear-gradient(to right, red , yellow); background-size: 200% auto; */
     animation: slide 1s infinite alternate;
 }
 

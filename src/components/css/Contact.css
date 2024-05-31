@@ -32,13 +32,25 @@
 }
 
 .Contact-Details table {
+ 
+
+  gap: 30px;
   width: 100%;
   border-collapse: collapse;
 }
+.Contact-Details table tr{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
 
 .Contact-Details table td {
+  width: 15ch;
+  font-size: 1rem;
+
   padding: 10px;
-  border-bottom: 1px solid #ddd;
+  /* border-bottom: 1px solid #ddd; */
   opacity: 0;
   transform: translateY(-50px);
   transition: opacity 0.5s ease, transform 0.5s ease;
@@ -73,14 +85,17 @@
 }
 
 .Contact .VisitButton {
-  padding: 5px 20px;
-  background-color:  #007bff; /* Primary color */
+  padding: 10px 40px;
+  background-color:  #FFDE00; /* Primary color */
   color: #fff;
-  border: 2px solid #c3d1e0; /* Border color */
+  font-size: 1rem;
+  /* border: 2px solid #c3d1e0; Border color */
+  border: none;
   border-radius: 5px;
   cursor: pointer;
+ 
   transition: background-color 0.3s, color 0.3s;
-  background-image: linear-gradient(to right, #0056b3,  #007bff); /* Gradient effect */
+  /* background-image: linear-gradient(to right, #0056b3,  #007bff); Gradient effect */
 }
 
 .Contact .VisitButton:hover {

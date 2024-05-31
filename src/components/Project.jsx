@@ -36,8 +36,8 @@ const ProjectSlider = () => {
         {projects.length > 0 && (
           <div className="project">
             <img src={projects[currentProjectIndex].img} alt="banner" />
-            <h2 className='name'>{projects[currentProjectIndex].name}</h2>
-            <p className='desc'>{projects[currentProjectIndex].desc}</p>
+            <h2 className='name' style={{ color: "white"}}>{projects[currentProjectIndex].name}</h2>
+            <p className='desc' style={{ color: "white"}}>{projects[currentProjectIndex].desc}</p>
             <div className="btns">
               <button className='pre' onClick={prevProject}>Previous</button>
               <button className='github'><a href={projects[currentProjectIndex].github}>Github  or View Link</a></button>

@@ -63,6 +63,9 @@ header ul li a{
 }
 
 @media (max-width: 700px) {
+    header{
+        background: transparent;
+    }
 
     header button{
         background-color: transparent;

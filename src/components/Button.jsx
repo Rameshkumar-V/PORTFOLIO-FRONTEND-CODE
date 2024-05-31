@@ -3,9 +3,9 @@ import './css/Button.css'; // Import your CSS file
 
 const Button = () => {
   return (
-    <button className="element" type="button">
-   Contact me
-    </button>
+    <a href="#Contact"><button className="element" type="button">
+    Contact me
+    </button></a>
   );
 }
 
